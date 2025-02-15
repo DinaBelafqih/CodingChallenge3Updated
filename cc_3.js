@@ -57,3 +57,21 @@ let feedback = [
 feedback.push({ customerName: "David", feedbackText: "Could be better.", rating: 2 });
 
 console.log(feedback); // Output the updated feedback array
+
+
+// Task 5: Inventory Management System
+
+// Declare an object inventory with properties: itemName, stockCount, and price
+let inventory = {
+    itemName: "Laptop",
+    stockCount: 50,
+    price: 999.99
+};
+
+// Add a method calculateTotalValue that returns the total value (stockCount * price)
+inventory.calculateTotalValue = function() {
+    return this.stockCount * this.price;
+};
+
+console.log(inventory); // Output the inventory object
+console.log(inventory.calculateTotalValue()); // Output the total value of the inventory
