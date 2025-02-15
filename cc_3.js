@@ -10,3 +10,17 @@ prices.push(18.99);
 prices.shift();
 
 console.log(prices); // Output the updated prices array
+
+// Task 2: Modifying Customer Orders
+
+// Declare an array orders with at least five numerical values representing quantities
+let orders = [2, 5, 3, 8, 6];
+
+// Increase the third order quantity by 5
+orders[2] += 5;
+
+// Calculate the total number of all orders
+let totalOrders = orders.reduce((total, order) => total + order, 0);
+
+console.log(orders); // Output the updated orders array
+console.log(totalOrders); // Output the total number of all orders
